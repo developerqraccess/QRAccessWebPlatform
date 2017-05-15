@@ -1,0 +1,109 @@
+﻿<!DOCTYPE html>
+<html data-ng-app="app">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="shortcut icon" type="image/x-icon" href="assets/img/favicon.ico" />
+    <title>QR Access</title>
+
+    <!-- Bootswatch lumen CSS -->
+    <link href="assets/libs/bootstrap/plugins/bootswatch/lumen/bootstrap.min.css" rel="stylesheet" />
+
+    <!-- Loading bar CSS -->
+    <link href="assets/libs/angularJS/plugins/loading-bar/loading-bar.css" rel="stylesheet" />
+
+    <!-- Aditional CSS -->
+    <link href="assets/css/login.css" rel="stylesheet" />
+
+    <!-- Custom Fonts -->
+    <link href="assets/libs/font-awesome/font-awesome.css" rel="stylesheet" />
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+<body>
+
+    <div id="page-wrapper">
+        <form role="form">
+            <div class="row">
+                <div class="col-md-2">
+                    &nbsp;
+                </div>
+                <div class="col-md-4">
+                    <h2 class="form-login-heading">Login</h2>
+                    <input type="text" class="form-control" placeholder="Username" data-ng-model="loginData.userName" required autofocus>
+                    <input type="password" class="form-control" placeholder="Password" data-ng-model="loginData.password" required>
+                    <div class="checkbox">
+                        <label>
+                            <input type="checkbox" data-ng-model="loginData.useRefreshTokens"><strong> Use Refresh Tokens</strong>
+                        </label>
+                    </div>
+                    <button class="btn btn-md btn-info btn-block" type="submit" data-ng-click="login()">Login</button>
+                    <div data-ng-hide="message == ''" class="alert alert-danger">
+                        {{message}}
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <h2 class="form-login-heading">Social Logins</h2>
+                    <p>Or you can login using one of the social logins bleow</p>
+                    <button class="btn btn-large btn-facebook btn-block" type="button" data-ng-click="authExternalProvider('Facebook')"><i class="fa fa-facebook"></i> | Connect with Facebook</button>
+                    <button class="btn btn-large btn-google-plus btn-block" type="button" data-ng-click="authExternalProvider('Google')"><i class="fa fa-google-plus"></i> | Connect with Google+</button>
+                </div>
+                <div class="col-md-2">
+                    &nbsp;
+                </div>
+            </div>
+        </form>
+    </div>
+    <!-- /#page-wrapper -->
+    <!--<hr />
+
+    <div id="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <p class="text-muted">Created by Taiseer Joudeh. Twitter: <a target="_blank" href="http://twitter.com/tjoudeh">@tjoudeh</a></p>
+                </div>
+                <div class="col-md-6">
+                    <p class="text-muted">Taiseer Joudeh Blog: <a target="_blank" href="http://bitoftech.net">bitoftech.net</a></p>
+                </div>
+            </div>
+        </div>
+    </div>-->
+    <!--===========================================================================================-->
+    <!-- jQuery -->
+    <script src="assets/libs/jquery/jquery.min.js"></script>
+
+    <script src="assets/js/index.js"></script>
+
+    <!-- Angular JavaScript -->
+    <script src="assets/libs/angularJS/1.2.32/angular.min.js"></script>
+    <script src="assets/libs/angularJS/plugins/angular-ui-router/angular-ui-router.js"></script>
+    <!--<script src="assets/libs/angularJS/1.2.32/angular-route.min.js"></script>-->
+    <!-- Angular local storage JavaScript -->
+    <script src="assets/libs/angularJS/plugins/local-storage/angular-local-storage.min.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="assets/libs/bootstrap/bootstrap.min.js"></script>
+
+    <!-- Loading Bar -->
+    <script src="assets/libs/angularJS/plugins/loading-bar/loading-bar.min.js"></script>
+
+    <!-- Custom Theme JavaScript -->
+    <script src="app/app.js"></script>
+    <script src="app/services/authInterceptorService.js"></script>
+    <script src="app/services/authService.js"></script>
+    <script src="app/services/account/loginService.js"></script>
+    <script src="app/controllers/account/loginController.js"></script>
+
+
+
+</body>
+</html>

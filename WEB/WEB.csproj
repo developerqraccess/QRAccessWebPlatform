@@ -1,0 +1,276 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\build\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props" Condition="Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\build\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" />
+  <Import Project="..\packages\Microsoft.Net.Compilers.1.0.0\build\Microsoft.Net.Compilers.props" Condition="Exists('..\packages\Microsoft.Net.Compilers.1.0.0\build\Microsoft.Net.Compilers.props')" />
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{D39B26B0-ED89-424E-9A9E-EFFFB44EC5A0}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>WEB</RootNamespace>
+    <AssemblyName>WEB</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CodeDom.Providers.DotNetCompilerPlatform, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\lib\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="app\views\main\login.html" />
+    <Content Include="assets\css\external\login.css" />
+    <Content Include="assets\css\frame.css" />
+    <Content Include="assets\css\index.css" />
+    <Content Include="assets\css\main\signUpComplete.css" />
+    <Content Include="assets\fonts\font-awesome\fontawesome-webfont.svg" />
+    <Content Include="assets\fonts\glyphicons\glyphicons-halflings-regular.svg" />
+    <Content Include="assets\img\datatables\favicon.ico" />
+    <Content Include="assets\img\datatables\sort_asc.png" />
+    <Content Include="assets\img\datatables\sort_asc_disabled.png" />
+    <Content Include="assets\img\datatables\sort_both.png" />
+    <Content Include="assets\img\datatables\sort_desc.png" />
+    <Content Include="assets\img\datatables\sort_desc_disabled.png" />
+    <Content Include="assets\img\logos\logo142x41.png" />
+    <Content Include="assets\js\frame.js" />
+    <Content Include="assets\js\main\signUpComplete.js" />
+    <Content Include="assets\js\pages\dashboard.js" />
+    <Content Include="assets\js\pages\orders.js" />
+    <Content Include="assets\js\pages\preSignUp.js" />
+    <Content Include="assets\libs\angularJS\1.2.32\angular-route.min.js" />
+    <Content Include="assets\libs\angularJS\1.2.32\angular.min.js" />
+    <Content Include="assets\libs\angularJS\plugins\angular-route\angular-route.min.js" />
+    <Content Include="assets\libs\angularJS\plugins\angular-ui-router\angular-ui-router.js" />
+    <Content Include="assets\libs\angularJS\plugins\loading-bar\loading-bar.css" />
+    <Content Include="assets\libs\angularJS\plugins\loading-bar\loading-bar.min.css" />
+    <Content Include="assets\libs\angularJS\plugins\loading-bar\loading-bar.min.js" />
+    <Content Include="assets\libs\angularJS\plugins\local-storage\angular-local-storage.min.js" />
+    <Content Include="assets\libs\angularJS\plugins\oclazyload\ocLazyLoad.js" />
+    <Content Include="assets\libs\angularJS\plugins\oclazyload\ocLazyLoad.min.js" />
+    <Content Include="assets\libs\bootstrap\bootstrap.css" />
+    <Content Include="assets\libs\bootstrap\bootstrap.js" />
+    <Content Include="assets\libs\bootstrap\bootstrap.min.css" />
+    <Content Include="assets\libs\bootstrap\bootstrap.min.js" />
+    <Content Include="assets\libs\bootstrap\plugins\bootswatch\lumen\bootstrap.css" />
+    <Content Include="assets\libs\bootstrap\plugins\bootswatch\lumen\bootstrap.min.css" />
+    <Content Include="assets\libs\bootstrap\plugins\bootswatch\lumen\SBAdmin-mod.css" />
+    <Content Include="assets\libs\bootstrap\plugins\bootswatch\paper\bootstrap.min.css" />
+    <Content Include="assets\libs\bootstrap\plugins\datatables-plugins\dataTables.bootstrap.css" />
+    <Content Include="assets\libs\bootstrap\plugins\datatables-plugins\dataTables.bootstrap.js" />
+    <Content Include="assets\libs\bootstrap\plugins\datatables-plugins\dataTables.bootstrap.min.js" />
+    <Content Include="assets\libs\bootstrap\plugins\datatables-plugins\index.html" />
+    <Content Include="assets\libs\bootstrap\plugins\datatables-responsive\dataTables.responsive.css" />
+    <Content Include="assets\libs\bootstrap\plugins\datatables-responsive\dataTables.responsive.js" />
+    <Content Include="assets\libs\bootstrap\plugins\datatables-responsive\dataTables.responsive.scss" />
+    <Content Include="assets\libs\bootstrap\plugins\datatables\dataTables.bootstrap.css" />
+    <Content Include="assets\libs\bootstrap\plugins\datatables\dataTables.bootstrap.js" />
+    <Content Include="assets\libs\bootstrap\plugins\datatables\dataTables.bootstrap.min.css" />
+    <Content Include="assets\libs\bootstrap\plugins\datatables\dataTables.bootstrap.min.js" />
+    <Content Include="assets\libs\bootstrap\plugins\datatables\dataTables.bootstrap4.css" />
+    <Content Include="assets\libs\bootstrap\plugins\datatables\dataTables.bootstrap4.js" />
+    <Content Include="assets\libs\bootstrap\plugins\datatables\dataTables.bootstrap4.min.css" />
+    <Content Include="assets\libs\bootstrap\plugins\datatables\dataTables.bootstrap4.min.js" />
+    <Content Include="assets\libs\bootstrap\plugins\datatables\dataTables.foundation.css" />
+    <Content Include="assets\libs\bootstrap\plugins\datatables\dataTables.foundation.js" />
+    <Content Include="assets\libs\bootstrap\plugins\datatables\dataTables.foundation.min.css" />
+    <Content Include="assets\libs\bootstrap\plugins\datatables\dataTables.foundation.min.js" />
+    <Content Include="assets\libs\bootstrap\plugins\datatables\dataTables.jqueryui.css" />
+    <Content Include="assets\libs\bootstrap\plugins\datatables\dataTables.jqueryui.js" />
+    <Content Include="assets\libs\bootstrap\plugins\datatables\dataTables.jqueryui.min.css" />
+    <Content Include="assets\libs\bootstrap\plugins\datatables\dataTables.jqueryui.min.js" />
+    <Content Include="assets\libs\bootstrap\plugins\datatables\dataTables.material.css" />
+    <Content Include="assets\libs\bootstrap\plugins\datatables\dataTables.material.js" />
+    <Content Include="assets\libs\bootstrap\plugins\datatables\dataTables.material.min.css" />
+    <Content Include="assets\libs\bootstrap\plugins\datatables\dataTables.material.min.js" />
+    <Content Include="assets\libs\bootstrap\plugins\datatables\dataTables.semanticui.css" />
+    <Content Include="assets\libs\bootstrap\plugins\datatables\dataTables.semanticui.js" />
+    <Content Include="assets\libs\bootstrap\plugins\datatables\dataTables.semanticui.min.css" />
+    <Content Include="assets\libs\bootstrap\plugins\datatables\dataTables.semanticui.min.js" />
+    <Content Include="assets\libs\bootstrap\plugins\datatables\dataTables.uikit.css" />
+    <Content Include="assets\libs\bootstrap\plugins\datatables\dataTables.uikit.js" />
+    <Content Include="assets\libs\bootstrap\plugins\datatables\dataTables.uikit.min.css" />
+    <Content Include="assets\libs\bootstrap\plugins\datatables\dataTables.uikit.min.js" />
+    <Content Include="assets\libs\bootstrap\plugins\datatables\jquery.dataTables.css" />
+    <Content Include="assets\libs\bootstrap\plugins\datatables\jquery.dataTables.js" />
+    <Content Include="assets\libs\bootstrap\plugins\datatables\jquery.dataTables.min.css" />
+    <Content Include="assets\libs\bootstrap\plugins\datatables\jquery.dataTables.min.js" />
+    <Content Include="assets\libs\bootstrap\plugins\datatables\jquery.dataTables_themeroller.css" />
+    <Content Include="assets\libs\bootstrap\plugins\datatables\jquery.js" />
+    <Content Include="assets\libs\bootstrap\plugins\sb-admin2\sb-admin-2.css" />
+    <Content Include="assets\libs\bootstrap\plugins\sb-admin2\sb-admin-2.js" />
+    <Content Include="assets\libs\bootstrap\plugins\sb-admin2\sb-admin-2.min.css" />
+    <Content Include="assets\libs\bootstrap\plugins\sb-admin2\sb-admin-2.min.js" />
+    <Content Include="assets\libs\chartist\chartist.css" />
+    <Content Include="assets\libs\chartist\chartist.css.map" />
+    <Content Include="assets\libs\chartist\chartist.js" />
+    <Content Include="assets\libs\chartist\chartist.min.css" />
+    <Content Include="assets\libs\chartist\chartist.min.js" />
+    <Content Include="assets\libs\chartist\chartist.min.js.map" />
+    <Content Include="assets\libs\font-awesome\font-awesome.css" />
+    <Content Include="assets\libs\font-awesome\font-awesome.css.map" />
+    <Content Include="assets\libs\font-awesome\font-awesome.min.css" />
+    <Content Include="assets\libs\jquery\jquery.js" />
+    <Content Include="assets\libs\jquery\jquery.min.js" />
+    <Content Include="assets\libs\jquery\plugins\metisMenu\metisMenu.css" />
+    <Content Include="assets\libs\jquery\plugins\metisMenu\metisMenu.js" />
+    <Content Include="assets\libs\jquery\plugins\metisMenu\metisMenu.min.css" />
+    <Content Include="assets\libs\jquery\plugins\metisMenu\metisMenu.min.js" />
+    <Content Include="packages.config" />
+    <Content Include="assets\js\index.js" />
+    <Content Include="assets\fonts\font-awesome\fontawesome-webfont.eot" />
+    <Content Include="assets\fonts\font-awesome\fontawesome-webfont.ttf" />
+    <Content Include="assets\fonts\font-awesome\fontawesome-webfont.woff" />
+    <Content Include="assets\fonts\font-awesome\fontawesome-webfont.woff2" />
+    <Content Include="assets\fonts\font-awesome\FontAwesome.otf" />
+    <Content Include="assets\fonts\glyphicons\glyphicons-halflings-regular.eot" />
+    <Content Include="assets\fonts\glyphicons\glyphicons-halflings-regular.ttf" />
+    <Content Include="assets\fonts\glyphicons\glyphicons-halflings-regular.woff" />
+    <Content Include="assets\img\datatables\Sorting icons.psd" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="app\app.js" />
+    <Content Include="app\controllers\account\loginController.js" />
+    <Content Include="app\controllers\account\signUpCompleteController.js" />
+    <Content Include="app\controllers\homeController.js" />
+    <Content Include="app\controllers\indexController.js" />
+    <Content Include="app\controllers\loginController.js" />
+    <Content Include="app\controllers\main\dashboard\dashboardController.js" />
+    <Content Include="app\controllers\main\frame\frameController.js" />
+    <Content Include="app\controllers\ordersController.js" />
+    <Content Include="app\controllers\pages\ordersController.js" />
+    <Content Include="app\controllers\pages\preSignUpController.js" />
+    <Content Include="app\controllers\refreshController.js" />
+    <Content Include="app\controllers\signupController.js" />
+    <Content Include="app\controllers\tokensManagerController.js" />
+    <Content Include="app\services\account\loginService.js" />
+    <Content Include="app\services\account\signUpCompleteService.js" />
+    <Content Include="app\services\authInterceptorService.js" />
+    <Content Include="app\services\authService.js" />
+    <Content Include="app\services\dashboard\dashboardService.js" />
+    <Content Include="app\services\ordersService.js" />
+    <Content Include="app\services\pages\ordersService.js" />
+    <Content Include="app\services\pages\preSignUpService.js" />
+    <Content Include="app\services\tokensManagerService.js" />
+    <Content Include="app\views\account\login.html" />
+    <Content Include="app\views\main\signUpComplete.html" />
+    <Content Include="app\views\pages\associate.html" />
+    <Content Include="app\views\home.html" />
+    <Content Include="app\views\login.html" />
+    <Content Include="app\views\pages\dashboard.html" />
+    <Content Include="app\views\main\frame.html" />
+    <Content Include="app\views\orders.html" />
+    <Content Include="app\views\pages\orders.html" />
+    <Content Include="app\views\pages\signUp.html" />
+    <Content Include="app\views\refresh.html" />
+    <Content Include="app\views\signup.html" />
+    <Content Include="app\views\tokens.html" />
+    <Content Include="assets\img\favicon.ico" />
+    <Content Include="index.html" />
+    <Content Include="assets\js\authComplete.js" />
+    <Content Include="Web.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="app\controllers\external\" />
+    <Folder Include="app\directives\" />
+    <Folder Include="assets\css\pages\" />
+    <Folder Include="assets\js\external\" />
+    <Folder Include="assets\libs\chartJS\" />
+    <Folder Include="assets\libs\momentJS\" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>56245</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:32150/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\Microsoft.Net.Compilers.1.0.0\build\Microsoft.Net.Compilers.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.Net.Compilers.1.0.0\build\Microsoft.Net.Compilers.props'))" />
+    <Error Condition="!Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\build\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\build\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props'))" />
+  </Target>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
