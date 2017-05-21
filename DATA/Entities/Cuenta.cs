@@ -35,6 +35,11 @@ namespace DATA.Entities
 
         public DateTime? FechaVencimiento { get; set; }
 
+        [StringLength(100)]
+        public string TokenActivacion { get; set; }
+
+        public DateTime? TokenVencimiento { get; set; }
+
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<CodigoCuenta> CodigoCuenta { get; set; }
 
@@ -43,6 +48,8 @@ namespace DATA.Entities
         public virtual Usuario Usuario { get; set; }
 
         public virtual TipoCuenta TipoCuenta { get; set; }
+
+        
 
     }
 }

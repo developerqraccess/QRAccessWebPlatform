@@ -23,22 +23,33 @@ namespace API.Controllers
         }
 
         [Authorize] 
-        [Route("")]
+        [HttpGet]
+        [Route("Get")]
         public IHttpActionResult Get()
         {
-            return Ok(_mdl.GetSignUpModel());  
+            return Ok(_mdl.GetSignUpModel());
         }
 
         [Authorize]
-        [Route("")]
+        [HttpPost]
+        [Route("Set")]
         public IHttpActionResult Set(Usuario user)
-        {   
-            return Ok(_mdl.SetSignUpModel(user)); 
+        {
+
+            try {
+                object result = _mdl.SetSignUpModel(user);
+                return Ok(result);
+            }
+            catch (Exception ex) {
+                return BadRequest(ex.ToString());
+            }
+            
+             
         }
 
         [Authorize]
-        [HttpPut]
-        [Route("")]
+        [HttpPost]
+        [Route("Put")]
         public IHttpActionResult Put(Usuario user)
         {
             try {
@@ -49,31 +60,27 @@ namespace API.Controllers
             }  
         }
 
-        //[Authorize]
-        //[HttpDelete]
-        //[Route("")]
-        //public HttpResponseMessage Delete(int id)
-        //{
-        //    return new HttpResponseMessage(HttpStatusCode.OK);
-        //}
         [Authorize]
-        [AcceptVerbs("DELETE")]
-        [Route("")]
-        public HttpResponseMessage Delete(int id)
+        [HttpPost]
+        [Route("Delete")]
+        public IHttpActionResult Delete(Usuario user)
         {
-            HttpStatusCode result = new HttpStatusCode();
+            IHttpActionResult result;
 
-            try {
-                _mdl.DeleteSignUpModel(id);
+            try
+            {
+                _mdl.DeleteSignUpModel(user);
             }
-            catch (Exception) {
-                result = HttpStatusCode.BadRequest;
+            catch (Exception)
+            {
+                result = BadRequest();
             }
-            finally {
-                result = HttpStatusCode.OK;
+            finally
+            {
+                result = Ok();
             }
 
-            return new HttpResponseMessage(result);
+            return result;
         }
     }
 }

@@ -7,25 +7,25 @@ app.factory('preSignUpService', ['$http', 'ngAuthSettings', function ($http, ngA
 
     var _getUsers = function () {
 
-        return $http.get(serviceBase + 'api/PreSignup').then(function (results) {
+        return $http.get(serviceBase + 'api/PreSignup/Get').then(function (results) {
             return results;
         });
     };
     var _setUser = function (user) {
-        return $http.post(serviceBase + 'api/PreSignup', user).then(function (results) {
+        return $http.post(serviceBase + 'api/PreSignup/Set', user).then(function (results) {
             return results;
         });
 
     };
 
     var _PutUser = function (user) {
-        return $http.put(serviceBase + 'api/PreSignup', user).then(function (results) {
+        return $http.post(serviceBase + 'api/PreSignup/Put', user).then(function (results) {
             return results;
         });
     }
 
-    var _DeleteUser = function (id) {
-        return $http.delete(serviceBase + 'api/PreSignup', { 'id': id }).then(function (results) {
+    var _DeleteUser = function (user) {
+        return $http.post(serviceBase + 'api/PreSignup/Delete', user).then(function (results) {
             return results;
         });
     }

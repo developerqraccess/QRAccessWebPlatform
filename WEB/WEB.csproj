@@ -103,6 +103,8 @@
     <Content Include="assets\libs\bootstrap\plugins\bootswatch\lumen\bootstrap.min.css" />
     <Content Include="assets\libs\bootstrap\plugins\bootswatch\lumen\SBAdmin-mod.css" />
     <Content Include="assets\libs\bootstrap\plugins\bootswatch\paper\bootstrap.min.css" />
+    <Content Include="assets\libs\bootstrap\plugins\bootswatch\sandstone\bootstrap.min.css" />
+    <Content Include="assets\libs\bootstrap\plugins\bootswatch\yeti\bootstrap.min.css" />
     <Content Include="assets\libs\bootstrap\plugins\datatables-plugins\dataTables.bootstrap.css" />
     <Content Include="assets\libs\bootstrap\plugins\datatables-plugins\dataTables.bootstrap.js" />
     <Content Include="assets\libs\bootstrap\plugins\datatables-plugins\dataTables.bootstrap.min.js" />
@@ -163,6 +165,8 @@
     <Content Include="assets\libs\jquery\plugins\metisMenu\metisMenu.js" />
     <Content Include="assets\libs\jquery\plugins\metisMenu\metisMenu.min.css" />
     <Content Include="assets\libs\jquery\plugins\metisMenu\metisMenu.min.js" />
+    <Content Include="assets\libs\toastr\toastr.min.js" />
+    <Content Include="assets\libs\toastr\toastrConfig.js" />
     <Content Include="packages.config" />
     <Content Include="assets\js\index.js" />
     <Content Include="assets\fonts\font-awesome\fontawesome-webfont.eot" />
@@ -174,6 +178,7 @@
     <Content Include="assets\fonts\glyphicons\glyphicons-halflings-regular.ttf" />
     <Content Include="assets\fonts\glyphicons\glyphicons-halflings-regular.woff" />
     <Content Include="assets\img\datatables\Sorting icons.psd" />
+    <Content Include="assets\libs\toastr\toastr.min.css" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

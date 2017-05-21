@@ -27,10 +27,13 @@ app.controller('preSignUpController', ['$scope', 'preSignUpService', function ($
 
         preSignUpService.setUser(element).then(
             function (results) {
-                alert(results.data[0]);
+                $('#aModal').modal('hide');
+                $scope.usuarios.push(results.data[0]);
+                toastr.success('Usuario registrado correctamente');
+                $scope.defaultUser = null;
             },
             function (error) {
-
+                toastr.danger('Se ha generado un error al registrar el usuario');
             }
         );
     };
@@ -38,21 +41,26 @@ app.controller('preSignUpController', ['$scope', 'preSignUpService', function ($
     $scope.UpdateUser = function (element) {
         preSignUpService.putUser(element).then(
             function (results) {
-
+                $scope.usuarios.splice(element, 1);
+                $('#uModal').modal('hide');
+                toastr.success('Usuario modificado correctamente');
             },
             function (error) {
-
+                toastr.danger('Se ha generado un error al modificar el usuario');
             }
         );
     };
 
-    $scope.DeleteUser = function (id) {
-        preSignUpService.deleteUser(id).then(
+    $scope.DeleteUser = function (element) {
+        preSignUpService.deleteUser(element).then(
             function (results) {
-                alert('OK');
+                var index = $scope.usuarios.indexOf(element);
+                $scope.usuarios.splice(element, 1);
+                $('#dModal').modal('hide');
+                toastr.success('Usuario eliminado correctamente');
             },
             function (error) {
-
+                toastr.danger('Se ha generado un error al eliminar el usuario');
             }
         );
     };

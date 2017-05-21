@@ -17,7 +17,7 @@ namespace DATA.Entities
             Cuenta = new HashSet<Cuenta>();
         }
 
-        public int? Id { get; set; }
+        public int Id { get; set; }
 
         [Required]
         public string Cedula { get; set; }
