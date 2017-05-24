@@ -149,7 +149,12 @@
     <Compile Include="Controllers\OrdersController.cs" />
     <Compile Include="Controllers\PreSignUpController.cs" />
     <Compile Include="Controllers\RefreshTokensController.cs" />
+    <Compile Include="Controllers\SignUpCompleteController.cs" />
     <Compile Include="Helper.cs" />
+    <Compile Include="Migrations\201705232327414_20170523.1.cs" />
+    <Compile Include="Migrations\201705232327414_20170523.1.Designer.cs">
+      <DependentUpon>201705232327414_20170523.1.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\SignUpModel.cs" />
     <Compile Include="Models\UserModel.cs" />
@@ -174,6 +179,11 @@
     <None Include="Web.Release.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Migrations\201705232327414_20170523.1.resx">
+      <DependentUpon>201705232327414_20170523.1.cs</DependentUpon>
+    </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

@@ -2,13 +2,12 @@
  *  SBADMIN STYLES CONFIGURATION 
  *  FOR BOOTSWATCH THEMES 
 **/
-
-.navbar-default .sidebar {
+.sidebar {
     margin-top: 54px;
 }
 
 @media(max-width: 767px) {
-    .navbar-default .sidebar {
+    .sidebar {
         margin-top: 0px;
     }
 }

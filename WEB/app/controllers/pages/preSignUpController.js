@@ -1,4 +1,5 @@
-﻿'use strict';
+﻿/// <reference path="E:\SourceCode\QRAccessColombia\Web\QRAccessWebPlatform\WEB\assets/js/index.js" />
+'use strict';
 app.controller('preSignUpController', ['$scope', 'preSignUpService', function ($scope , preSignUpService) {
 
     $scope.defaultUser = {
@@ -29,11 +30,11 @@ app.controller('preSignUpController', ['$scope', 'preSignUpService', function ($
             function (results) {
                 $('#aModal').modal('hide');
                 $scope.usuarios.push(results.data[0]);
-                toastr.success('Usuario registrado correctamente');
+                toastr.success('Propietario registrado correctamente');
                 $scope.defaultUser = null;
             },
             function (error) {
-                toastr.danger('Se ha generado un error al registrar el usuario');
+                toastr.danger('Se ha generado un error al registrar el propietario');
             }
         );
     };
@@ -41,12 +42,11 @@ app.controller('preSignUpController', ['$scope', 'preSignUpService', function ($
     $scope.UpdateUser = function (element) {
         preSignUpService.putUser(element).then(
             function (results) {
-                $scope.usuarios.splice(element, 1);
                 $('#uModal').modal('hide');
-                toastr.success('Usuario modificado correctamente');
+                toastr.success('Propietario modificado correctamente');
             },
             function (error) {
-                toastr.danger('Se ha generado un error al modificar el usuario');
+                toastr.danger('Se ha generado un error al modificar el propietario');
             }
         );
     };
@@ -55,12 +55,12 @@ app.controller('preSignUpController', ['$scope', 'preSignUpService', function ($
         preSignUpService.deleteUser(element).then(
             function (results) {
                 var index = $scope.usuarios.indexOf(element);
-                $scope.usuarios.splice(element, 1);
+                $scope.usuarios.splice(index, 1);
                 $('#dModal').modal('hide');
-                toastr.success('Usuario eliminado correctamente');
+                toastr.success('Propietario eliminado correctamente');
             },
             function (error) {
-                toastr.danger('Se ha generado un error al eliminar el usuario');
+                toastr.danger('Se ha generado un error al eliminar el propietario');
             }
         );
     };

@@ -2,3 +2,4 @@ E:\SourceCode\QRAccessColombia\Web\QRAccessWebPlatform\DATA\bin\Debug\DATA.dll
 E:\SourceCode\QRAccessColombia\Web\QRAccessWebPlatform\DATA\bin\Debug\DATA.pdb
 E:\SourceCode\QRAccessColombia\Web\QRAccessWebPlatform\DATA\obj\Debug\DATA.dll
 E:\SourceCode\QRAccessColombia\Web\QRAccessWebPlatform\DATA\obj\Debug\DATA.pdb
+E:\SourceCode\QRAccessColombia\Web\QRAccessWebPlatform\DATA\obj\Debug\DATA.csprojResolveAssemblyReference.cache

@@ -35,16 +35,13 @@ namespace API.Controllers
         [Route("Set")]
         public IHttpActionResult Set(Usuario user)
         {
-
             try {
                 object result = _mdl.SetSignUpModel(user);
                 return Ok(result);
             }
             catch (Exception ex) {
                 return BadRequest(ex.ToString());
-            }
-            
-             
+            }           
         }
 
         [Authorize]

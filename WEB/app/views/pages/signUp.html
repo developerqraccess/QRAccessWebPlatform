@@ -1,11 +1,11 @@
 ﻿<div id="page-wrapper">
     <div class="row">
         <div class="col-lg-12">
-            <h1 class="page-header">Registro de usuarios</h1>
+            <h1 class="page-header">Registro de propietarios</h1>
         </div>
         <!-- /.col-lg-12 -->
     </div>
-    <!-- /.row -->
+    <!-- /.row -->  
     <div class="row">
         <div class="col-lg-12">
             <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#aModal"><i class="fa fa-plus" aria-hidden="true"></i> Agregar</button>
@@ -119,11 +119,9 @@
                     <div class="form-group">
                         ¿Esta seguro de eliminar el registro seleccionado?
                     </div>
-                    <button type="submit" class="btn btn-primary" ng-click="DeleteUser(usuario)">Aceptar</button>
+                    <button type="submit" class="btn btn-primary" ng-click="DeleteUser(usuario, $index)">Aceptar</button>
                 </form>
             </div>
         </div>
     </div>
 </div>
-
-<script src="../../../assets/js/pages/preSignUp.js"></script>

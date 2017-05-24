@@ -2,6 +2,26 @@
     margin-top:40px; 
 }
 
+.stepBtn {
+    opacity: 1 !important;
+}
+
+.nextBtn {
+    margin-bottom: 20px;
+}
+
+.acta {
+    text-align: justify;
+}
+
+.centrado {
+    text-align: center;
+}
+
+.enlinea {
+    display: inline-block;
+}
+
 .stepwizard-step p {
     margin-top: 10px;
 }

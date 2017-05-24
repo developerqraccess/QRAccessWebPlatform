@@ -7,5 +7,15 @@ app.controller('frameController', ['$scope', '$location', 'authService', functio
         $location.path('/login'); 
     }
 
+    $('#side-menu').metisMenu();
+    if ($(window).width() < 768) {
+        setTimeout(function () {
+            $('.sidebar-nav').removeAttr('aria-expanded');
+            $('.sidebar-nav').removeClass('in');
+            $('.sidebar-nav').addClass('collapse');
+
+        }, 100);
+    }
+
     $scope.authentication = authService.authentication;
 }]);

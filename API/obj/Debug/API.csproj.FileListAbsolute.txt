@@ -54,3 +54,5 @@ E:\SourceCode\QRAccessColombia\Web\QRAccessWebPlatform\API\bin\Newtonsoft.Json.x
 E:\SourceCode\QRAccessColombia\Web\QRAccessWebPlatform\API\bin\System.Net.Http.Formatting.xml
 E:\SourceCode\QRAccessColombia\Web\QRAccessWebPlatform\API\obj\Debug\API.dll
 E:\SourceCode\QRAccessColombia\Web\QRAccessWebPlatform\API\obj\Debug\API.pdb
+E:\SourceCode\QRAccessColombia\Web\QRAccessWebPlatform\API\obj\Debug\API.Migrations._201705231.resources
+E:\SourceCode\QRAccessColombia\Web\QRAccessWebPlatform\API\obj\Debug\API.csproj.GenerateResource.Cache

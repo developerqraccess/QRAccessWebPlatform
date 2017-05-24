@@ -26,7 +26,7 @@ app.config(function ($stateProvider, $urlRouterProvider) {
             views: {
                 'main': {
                     templateUrl: 'app/views/main/signUpComplete.html',
-                    controller: 'signupCompleteController'
+                    controller: 'signUpCompleteController'
                 }
             }
         })
@@ -66,6 +66,19 @@ app.config(function ($stateProvider, $urlRouterProvider) {
                 'content': {
                     templateUrl: 'app/views/pages/orders.html',
                     controller: 'ordersController'
+                }
+            }
+        })
+        .state('profile', {
+            url: '/profile',
+            views: {
+                'header': {
+                    templateUrl: 'app/views/main/frame.html',
+                    controller: 'frameController'
+                },
+                'content': {
+                    templateUrl: 'app/views/main/profile.html',
+                    controller: 'profileController'
                 }
             }
         });

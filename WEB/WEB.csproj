@@ -66,10 +66,13 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="app\controllers\main\profileController.js" />
     <Content Include="app\views\main\login.html" />
+    <Content Include="app\views\main\profile.html" />
     <Content Include="assets\css\external\login.css" />
     <Content Include="assets\css\frame.css" />
     <Content Include="assets\css\index.css" />
+    <Content Include="assets\css\main\profile.css" />
     <Content Include="assets\css\main\signUpComplete.css" />
     <Content Include="assets\fonts\font-awesome\fontawesome-webfont.svg" />
     <Content Include="assets\fonts\glyphicons\glyphicons-halflings-regular.svg" />
@@ -80,6 +83,7 @@
     <Content Include="assets\img\datatables\sort_desc.png" />
     <Content Include="assets\img\datatables\sort_desc_disabled.png" />
     <Content Include="assets\img\logos\logo142x41.png" />
+    <Content Include="assets\img\logos\user.jpg" />
     <Content Include="assets\js\frame.js" />
     <Content Include="assets\js\main\signUpComplete.js" />
     <Content Include="assets\js\pages\dashboard.js" />
@@ -150,6 +154,10 @@
     <Content Include="assets\libs\bootstrap\plugins\sb-admin2\sb-admin-2.js" />
     <Content Include="assets\libs\bootstrap\plugins\sb-admin2\sb-admin-2.min.css" />
     <Content Include="assets\libs\bootstrap\plugins\sb-admin2\sb-admin-2.min.js" />
+    <Content Include="assets\libs\bootstrap\plugins\twitter-bootstrap-wizard\jquery.bootstrap.wizard.js" />
+    <Content Include="assets\libs\bootstrap\plugins\twitter-bootstrap-wizard\jquery.bootstrap.wizard.min.js" />
+    <Content Include="assets\libs\bootstrap\plugins\validator\validator.js" />
+    <Content Include="assets\libs\bootstrap\plugins\validator\validator.min.js" />
     <Content Include="assets\libs\chartist\chartist.css" />
     <Content Include="assets\libs\chartist\chartist.css.map" />
     <Content Include="assets\libs\chartist\chartist.js" />
