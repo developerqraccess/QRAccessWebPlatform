@@ -30,13 +30,14 @@ namespace API.Controllers
             return Ok(_mdl.GetSignUpModel());
         }
 
+        
         [Authorize]
         [HttpPost]
-        [Route("Set")]
-        public IHttpActionResult Set(Usuario user)
+        [Route("Set/{tipousuario}")]
+        public IHttpActionResult Set(Usuario user, int tipousuario)
         {
             try {
-                object result = _mdl.SetSignUpModel(user);
+                object result = _mdl.SetSignUpModel(user, tipousuario);
                 return Ok(result);
             }
             catch (Exception ex) {

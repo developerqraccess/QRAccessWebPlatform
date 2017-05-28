@@ -1,0 +1,21 @@
+﻿.icoCollapse {
+    vertical-align: top;
+    margin-top: 15px;
+}
+.txtCollapse {
+    margin-right: 5px;
+    margin-left: 5px;
+    margin-top: 10px;
+}
+
+.txtCollapse > h5{
+    line-height: 0;
+    margin-top: 0px;    
+}
+
+.icoCollapse,
+.txtCollapse {
+    display: inline-block; 
+}
+
+

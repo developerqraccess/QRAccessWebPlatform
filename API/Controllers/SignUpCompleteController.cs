@@ -28,8 +28,8 @@ namespace API.Controllers
                 return Ok(_mdl.GetUserInformation(tkn));
             else 
                 return BadRequest();
+        }
 
-}
 
         [Route("SetUserInfo")]
         public IHttpActionResult SetUser(Usuario usr) {

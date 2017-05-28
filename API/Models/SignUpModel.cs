@@ -32,45 +32,98 @@ namespace API.Models
                Movil = d.Movil,
                Telefono = d.Telefono
            }).ToList();
+        }  
+
+
+        public object GetTypeAccount() 
+        {
+            return _cntx.TipoCuentas.Where(tc=> tc.Activo == true).ToList();
         }
 
-        public object SetSignUpModel(Usuario user)
+        public object GetTypeAccount(string usser)
         {
-            Usuario usr     = new Usuario();
+            int tipo =Convert.ToInt32( _cntx.Cuentas.Where(c => c.NombreUsuario == usser).Select(c => c.Tipo));
+            string Permisos = _cntx.TipoCuentas.Where(tc => tc.Id == tipo).Select(tc => tc.Permisos).ToString();
+
+            int[] a = Permisos.Split(',').Select(d => int.Parse(d)).ToArray();
+            return _cntx.TipoCuentas.Where(c => a.Contains(c.Id));
+
+            
+        }
+
+        public object SetSignUpModel(Usuario user, int tipoUsuario)
+        {
+            //Usuario usr     = new Usuario();
+            
             Cuenta  cnt     = new Cuenta(); 
             double  hours   = 48.00;
-            int tipoUsuario = 4;                        //Tipo Usuario (4 = funcionario) 
             int est         = 1;                        //Estado de la cuenta (Inactiva)
-            _cntx.Usuarios.Add(user);
-            _cntx.SaveChanges();
+            if (!ConsultarUsuario(user.Cedula))
+            {
+                _cntx.Usuarios.Add(user);
+                _cntx.SaveChanges();
 
-            usr = _cntx.Usuarios
-                .FirstOrDefault(w => w.Cedula == user.Cedula && w.Correo == user.Correo);
+                //usr = _cntx.Usuarios
+                //    .FirstOrDefault(w => w.Cedula == user.Cedula && w.Correo == user.Correo);
+               
+                if (!ConsultarCuenta(user.Id)) 
+                { 
+                    cnt.IdUsuario = user.Id;
+                    cnt.Tipo = tipoUsuario;
+                    cnt.Estado = est;
+                    cnt.FechaRegistro = DateTime.Now;
 
-            cnt.IdUsuario = usr.Id;
-            cnt.Tipo = tipoUsuario;
-            cnt.Estado = est;
-            cnt.TokenActivacion = System.Guid.NewGuid().ToString().Replace("-","");
-            cnt.TokenVencimiento = DateTime.Now.AddHours(hours);
 
-            _cntx.Cuentas.Add(cnt);
-            _cntx.SaveChanges();
-            //Envio de correo electrónico
-            SendMail(user);
+                    cnt.TokenActivacion = System.Guid.NewGuid().ToString().Replace("-", "");
+                    cnt.TokenVencimiento = DateTime.Now.AddHours(hours);
 
-            return _cntx.Usuarios
-                .Where(w => w.Cedula == user.Cedula && w.Correo == user.Correo)
-                .Select(d => new {
-                    Id = d.Id,
-                    Cedula = d.Cedula,
-                    Nombre = d.Nombre,
-                    Apellidos = d.Apellidos,
-                    FechaNacimiento = d.FechaNacimiento,
-                    Correo = d.Correo,
-                    Direccion = d.Direccion,
-                    Movil = d.Movil,
-                    Telefono = d.Telefono
-                }).ToList(); 
+                    _cntx.Cuentas.Add(cnt);
+                    _cntx.SaveChanges();
+                }
+                //Envio de correo electrónico
+                SendMail(user);
+
+                return _cntx.Usuarios
+                    .Where(w => w.Cedula == user.Cedula && w.Correo == user.Correo)
+                    .Select(d => new
+                    {
+                        Id = d.Id,
+                        Cedula = d.Cedula,
+                        Nombre = d.Nombre,
+                        Apellidos = d.Apellidos,
+                        FechaNacimiento = d.FechaNacimiento,
+                        Correo = d.Correo,
+                        Direccion = d.Direccion,
+                        Movil = d.Movil,
+                        Telefono = d.Telefono
+                    }).ToList();
+            }
+            else
+                throw new Exception("El usuario con la Cedula Ingresada ya Existe");
+        }
+
+
+        private bool ConsultarUsuario(string Cedula)
+        {
+        
+            int cantidad = _cntx.Usuarios.Where(u=> u.Cedula == Cedula).Count();
+            
+            if(cantidad == 0)
+                return false;
+            else
+                return true;
+        }
+
+
+        private bool ConsultarCuenta(int UsuarioId) 
+        {
+            int cantidad = _cntx.Cuentas.Where(c => c.IdUsuario == UsuarioId).Count();
+
+            if (cantidad == 0)
+                return false;
+            else
+                return true;
+            
         }
 
         public object PutSignUpModel(Usuario user)
@@ -112,8 +165,13 @@ namespace API.Models
 
             Cuenta cnt = _cntx.Cuentas.FirstOrDefault(c => c.IdUsuario == usr.Id);
 
-            _cntx.Cuentas.Remove(cnt);
-            _cntx.Usuarios.Remove(usr);
+            //Se valida que el dato no sea null
+            if(cnt != null)
+                _cntx.Cuentas.Remove(cnt);
+
+            if(usr != null)
+                _cntx.Usuarios.Remove(usr);
+
             _cntx.SaveChanges();
         }
 

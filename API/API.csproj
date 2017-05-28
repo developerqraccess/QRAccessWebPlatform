@@ -150,10 +150,15 @@
     <Compile Include="Controllers\PreSignUpController.cs" />
     <Compile Include="Controllers\RefreshTokensController.cs" />
     <Compile Include="Controllers\SignUpCompleteController.cs" />
+    <Compile Include="Controllers\TypeAccountController.cs" />
     <Compile Include="Helper.cs" />
     <Compile Include="Migrations\201705232327414_20170523.1.cs" />
     <Compile Include="Migrations\201705232327414_20170523.1.Designer.cs">
       <DependentUpon>201705232327414_20170523.1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201705261405252_AddCampoPermisosEnTipoCuenta.cs" />
+    <Compile Include="Migrations\201705261405252_AddCampoPermisosEnTipoCuenta.Designer.cs">
+      <DependentUpon>201705261405252_AddCampoPermisosEnTipoCuenta.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\SignUpModel.cs" />
@@ -173,6 +178,7 @@
     <Folder Include="App_Data\" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Properties\PublishProfiles\WebappQr.pubxml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -183,6 +189,9 @@
   <ItemGroup>
     <EmbeddedResource Include="Migrations\201705232327414_20170523.1.resx">
       <DependentUpon>201705232327414_20170523.1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201705261405252_AddCampoPermisosEnTipoCuenta.resx">
+      <DependentUpon>201705261405252_AddCampoPermisosEnTipoCuenta.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

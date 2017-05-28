@@ -1,0 +1,541 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--
+Este archivo es utilizado por el proceso de paquete/publicación de nuestro proyecto Web. Puede personalizar el comportamiento de este proceso
+editando este archivo MSBuild. Para conocer más acerca de esto, visite http://go.microsoft.com/fwlink/?LinkID=208121. 
+-->
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <TimeStampOfAssociatedLegacyPublishXmlFile />
+    <_PublishTargetUrl>G:\Jhoan\WebAppQRSitio</_PublishTargetUrl>
+  </PropertyGroup>
+  <ItemGroup>
+    <File Include="app/app.js">
+      <publishTime>05/25/2017 08:17:11</publishTime>
+    </File>
+    <File Include="app/controllers/account/loginController.js">
+      <publishTime>05/20/2017 18:27:42</publishTime>
+    </File>
+    <File Include="app/controllers/account/signUpCompleteController.js">
+      <publishTime>05/24/2017 17:47:01</publishTime>
+    </File>
+    <File Include="app/controllers/homeController.js">
+      <publishTime>05/20/2017 18:27:42</publishTime>
+    </File>
+    <File Include="app/controllers/indexController.js">
+      <publishTime>05/20/2017 18:27:42</publishTime>
+    </File>
+    <File Include="app/controllers/loginController.js">
+      <publishTime>05/24/2017 17:46:30</publishTime>
+    </File>
+    <File Include="app/controllers/main/dashboard/dashboardController.js">
+      <publishTime>05/20/2017 18:27:42</publishTime>
+    </File>
+    <File Include="app/controllers/main/frame/frameController.js">
+      <publishTime>05/24/2017 17:47:01</publishTime>
+    </File>
+    <File Include="app/controllers/main/profileController.js">
+      <publishTime>05/24/2017 17:47:02</publishTime>
+    </File>
+    <File Include="app/controllers/ordersController.js">
+      <publishTime>05/20/2017 18:27:42</publishTime>
+    </File>
+    <File Include="app/controllers/pages/ordersController.js">
+      <publishTime>05/20/2017 18:27:42</publishTime>
+    </File>
+    <File Include="app/controllers/pages/preSignUpController.js">
+      <publishTime>05/25/2017 14:18:13</publishTime>
+    </File>
+    <File Include="app/controllers/refreshController.js">
+      <publishTime>05/20/2017 18:27:42</publishTime>
+    </File>
+    <File Include="app/controllers/signupController.js">
+      <publishTime>05/24/2017 17:46:30</publishTime>
+    </File>
+    <File Include="app/controllers/tokensManagerController.js">
+      <publishTime>05/20/2017 18:27:42</publishTime>
+    </File>
+    <File Include="app/services/account/loginService.js">
+      <publishTime>05/20/2017 18:27:42</publishTime>
+    </File>
+    <File Include="app/services/account/signUpCompleteService.js">
+      <publishTime>05/24/2017 17:47:02</publishTime>
+    </File>
+    <File Include="app/services/authInterceptorService.js">
+      <publishTime>05/20/2017 18:27:42</publishTime>
+    </File>
+    <File Include="app/services/authService.js">
+      <publishTime>05/20/2017 18:27:42</publishTime>
+    </File>
+    <File Include="app/services/dashboard/dashboardService.js">
+      <publishTime>05/20/2017 18:27:42</publishTime>
+    </File>
+    <File Include="app/services/ordersService.js">
+      <publishTime>05/20/2017 18:27:42</publishTime>
+    </File>
+    <File Include="app/services/pages/ordersService.js">
+      <publishTime>05/20/2017 18:27:42</publishTime>
+    </File>
+    <File Include="app/services/pages/preSignUpService.js">
+      <publishTime>05/25/2017 11:44:55</publishTime>
+    </File>
+    <File Include="app/services/tokensManagerService.js">
+      <publishTime>05/20/2017 18:27:42</publishTime>
+    </File>
+    <File Include="app/views/account/login.html">
+      <publishTime>05/20/2017 18:27:42</publishTime>
+    </File>
+    <File Include="app/views/home.html">
+      <publishTime>05/20/2017 18:27:42</publishTime>
+    </File>
+    <File Include="app/views/login.html">
+      <publishTime>05/20/2017 18:27:42</publishTime>
+    </File>
+    <File Include="app/views/main/frame.html">
+      <publishTime>05/24/2017 20:48:55</publishTime>
+    </File>
+    <File Include="app/views/main/login.html">
+      <publishTime>05/20/2017 18:27:42</publishTime>
+    </File>
+    <File Include="app/views/main/profile.html">
+      <publishTime>05/24/2017 17:47:02</publishTime>
+    </File>
+    <File Include="app/views/main/signUpComplete.html">
+      <publishTime>05/24/2017 17:47:02</publishTime>
+    </File>
+    <File Include="app/views/orders.html">
+      <publishTime>05/20/2017 18:27:42</publishTime>
+    </File>
+    <File Include="app/views/pages/associate.html">
+      <publishTime>05/20/2017 18:27:42</publishTime>
+    </File>
+    <File Include="app/views/pages/dashboard.html">
+      <publishTime>05/24/2017 20:48:55</publishTime>
+    </File>
+    <File Include="app/views/pages/orders.html">
+      <publishTime>05/24/2017 17:47:02</publishTime>
+    </File>
+    <File Include="app/views/pages/signUp.html">
+      <publishTime>05/25/2017 10:50:29</publishTime>
+    </File>
+    <File Include="app/views/refresh.html">
+      <publishTime>05/20/2017 18:27:42</publishTime>
+    </File>
+    <File Include="app/views/signup.html">
+      <publishTime>05/20/2017 18:27:42</publishTime>
+    </File>
+    <File Include="app/views/tokens.html">
+      <publishTime>05/20/2017 18:27:42</publishTime>
+    </File>
+    <File Include="assets/css/external/login.css">
+      <publishTime>05/20/2017 18:27:42</publishTime>
+    </File>
+    <File Include="assets/css/frame.css">
+      <publishTime>05/20/2017 18:27:42</publishTime>
+    </File>
+    <File Include="assets/css/index.css">
+      <publishTime>05/20/2017 18:27:42</publishTime>
+    </File>
+    <File Include="assets/css/main/profile.css">
+      <publishTime>05/24/2017 17:47:02</publishTime>
+    </File>
+    <File Include="assets/css/main/signUpComplete.css">
+      <publishTime>05/24/2017 17:47:02</publishTime>
+    </File>
+    <File Include="assets/fonts/font-awesome/fontawesome-webfont.eot">
+      <publishTime>05/20/2017 18:27:42</publishTime>
+    </File>
+    <File Include="assets/fonts/font-awesome/fontawesome-webfont.svg">
+      <publishTime>05/20/2017 18:27:42</publishTime>
+    </File>
+    <File Include="assets/fonts/font-awesome/fontawesome-webfont.ttf">
+      <publishTime>05/20/2017 18:27:42</publishTime>
+    </File>
+    <File Include="assets/fonts/font-awesome/fontawesome-webfont.woff">
+      <publishTime>05/20/2017 18:27:42</publishTime>
+    </File>
+    <File Include="assets/fonts/font-awesome/fontawesome-webfont.woff2">
+      <publishTime>05/20/2017 18:27:42</publishTime>
+    </File>
+    <File Include="assets/fonts/font-awesome/FontAwesome.otf">
+      <publishTime>05/20/2017 18:27:42</publishTime>
+    </File>
+    <File Include="assets/fonts/glyphicons/glyphicons-halflings-regular.eot">
+      <publishTime>05/20/2017 18:27:42</publishTime>
+    </File>
+    <File Include="assets/fonts/glyphicons/glyphicons-halflings-regular.svg">
+      <publishTime>05/20/2017 18:27:42</publishTime>
+    </File>
+    <File Include="assets/fonts/glyphicons/glyphicons-halflings-regular.ttf">
+      <publishTime>05/20/2017 18:27:42</publishTime>
+    </File>
+    <File Include="assets/fonts/glyphicons/glyphicons-halflings-regular.woff">
+      <publishTime>05/20/2017 18:27:42</publishTime>
+    </File>
+    <File Include="assets/img/datatables/favicon.ico">
+      <publishTime>05/20/2017 18:27:42</publishTime>
+    </File>
+    <File Include="assets/img/datatables/Sorting icons.psd">
+      <publishTime>05/20/2017 18:27:42</publishTime>
+    </File>
+    <File Include="assets/img/datatables/sort_asc.png">
+      <publishTime>05/20/2017 18:27:42</publishTime>
+    </File>
+    <File Include="assets/img/datatables/sort_asc_disabled.png">
+      <publishTime>05/20/2017 18:27:42</publishTime>
+    </File>
+    <File Include="assets/img/datatables/sort_both.png">
+      <publishTime>05/20/2017 18:27:42</publishTime>
+    </File>
+    <File Include="assets/img/datatables/sort_desc.png">
+      <publishTime>05/20/2017 18:27:42</publishTime>
+    </File>
+    <File Include="assets/img/datatables/sort_desc_disabled.png">
+      <publishTime>05/20/2017 18:27:42</publishTime>
+    </File>
+    <File Include="assets/img/favicon.ico">
+      <publishTime>05/20/2017 18:27:42</publishTime>
+    </File>
+    <File Include="assets/img/logos/logo142x41.png">
+      <publishTime>05/20/2017 18:27:42</publishTime>
+    </File>
+    <File Include="assets/img/logos/user.jpg">
+      <publishTime>05/24/2017 17:47:02</publishTime>
+    </File>
+    <File Include="assets/js/authComplete.js">
+      <publishTime>05/20/2017 18:27:42</publishTime>
+    </File>
+    <File Include="assets/js/frame.js">
+      <publishTime>05/24/2017 17:47:02</publishTime>
+    </File>
+    <File Include="assets/js/index.js">
+      <publishTime>05/20/2017 18:27:42</publishTime>
+    </File>
+    <File Include="assets/js/main/signUpComplete.js">
+      <publishTime>05/24/2017 17:47:02</publishTime>
+    </File>
+    <File Include="assets/js/pages/dashboard.js">
+      <publishTime>05/20/2017 18:27:42</publishTime>
+    </File>
+    <File Include="assets/js/pages/orders.js">
+      <publishTime>05/20/2017 18:27:42</publishTime>
+    </File>
+    <File Include="assets/js/pages/preSignUp.js">
+      <publishTime>05/20/2017 18:27:42</publishTime>
+    </File>
+    <File Include="assets/libs/angularJS/1.2.32/angular-route.min.js">
+      <publishTime>05/20/2017 18:27:42</publishTime>
+    </File>
+    <File Include="assets/libs/angularJS/1.2.32/angular.min.js">
+      <publishTime>05/20/2017 18:27:42</publishTime>
+    </File>
+    <File Include="assets/libs/angularJS/plugins/angular-route/angular-route.min.js">
+      <publishTime>05/20/2017 18:27:42</publishTime>
+    </File>
+    <File Include="assets/libs/angularJS/plugins/angular-ui-router/angular-ui-router.js">
+      <publishTime>05/20/2017 18:27:42</publishTime>
+    </File>
+    <File Include="assets/libs/angularJS/plugins/loading-bar/loading-bar.css">
+      <publishTime>05/20/2017 18:27:42</publishTime>
+    </File>
+    <File Include="assets/libs/angularJS/plugins/loading-bar/loading-bar.min.css">
+      <publishTime>05/20/2017 18:27:42</publishTime>
+    </File>
+    <File Include="assets/libs/angularJS/plugins/loading-bar/loading-bar.min.js">
+      <publishTime>05/20/2017 18:27:42</publishTime>
+    </File>
+    <File Include="assets/libs/angularJS/plugins/local-storage/angular-local-storage.min.js">
+      <publishTime>05/20/2017 18:27:43</publishTime>
+    </File>
+    <File Include="assets/libs/angularJS/plugins/oclazyload/ocLazyLoad.js">
+      <publishTime>05/20/2017 18:27:43</publishTime>
+    </File>
+    <File Include="assets/libs/angularJS/plugins/oclazyload/ocLazyLoad.min.js">
+      <publishTime>05/20/2017 18:27:43</publishTime>
+    </File>
+    <File Include="assets/libs/bootstrap/bootstrap.css">
+      <publishTime>05/20/2017 18:27:43</publishTime>
+    </File>
+    <File Include="assets/libs/bootstrap/bootstrap.js">
+      <publishTime>05/20/2017 18:27:43</publishTime>
+    </File>
+    <File Include="assets/libs/bootstrap/bootstrap.min.css">
+      <publishTime>05/20/2017 18:27:43</publishTime>
+    </File>
+    <File Include="assets/libs/bootstrap/bootstrap.min.js">
+      <publishTime>05/20/2017 18:27:43</publishTime>
+    </File>
+    <File Include="assets/libs/bootstrap/plugins/bootswatch/lumen/bootstrap.css">
+      <publishTime>05/20/2017 18:27:43</publishTime>
+    </File>
+    <File Include="assets/libs/bootstrap/plugins/bootswatch/lumen/bootstrap.min.css">
+      <publishTime>05/20/2017 18:27:43</publishTime>
+    </File>
+    <File Include="assets/libs/bootstrap/plugins/bootswatch/lumen/SBAdmin-mod.css">
+      <publishTime>05/24/2017 17:47:02</publishTime>
+    </File>
+    <File Include="assets/libs/bootstrap/plugins/bootswatch/paper/bootstrap.min.css">
+      <publishTime>05/20/2017 18:27:43</publishTime>
+    </File>
+    <File Include="assets/libs/bootstrap/plugins/bootswatch/sandstone/bootstrap.min.css">
+      <publishTime>05/20/2017 18:31:05</publishTime>
+    </File>
+    <File Include="assets/libs/bootstrap/plugins/bootswatch/yeti/bootstrap.min.css">
+      <publishTime>05/20/2017 18:31:05</publishTime>
+    </File>
+    <File Include="assets/libs/bootstrap/plugins/datatables-plugins/dataTables.bootstrap.css">
+      <publishTime>05/20/2017 18:27:43</publishTime>
+    </File>
+    <File Include="assets/libs/bootstrap/plugins/datatables-plugins/dataTables.bootstrap.js">
+      <publishTime>05/20/2017 18:27:43</publishTime>
+    </File>
+    <File Include="assets/libs/bootstrap/plugins/datatables-plugins/dataTables.bootstrap.min.js">
+      <publishTime>05/20/2017 18:27:43</publishTime>
+    </File>
+    <File Include="assets/libs/bootstrap/plugins/datatables-plugins/index.html">
+      <publishTime>05/20/2017 18:27:43</publishTime>
+    </File>
+    <File Include="assets/libs/bootstrap/plugins/datatables-responsive/dataTables.responsive.css">
+      <publishTime>05/20/2017 18:27:43</publishTime>
+    </File>
+    <File Include="assets/libs/bootstrap/plugins/datatables-responsive/dataTables.responsive.js">
+      <publishTime>05/20/2017 18:27:43</publishTime>
+    </File>
+    <File Include="assets/libs/bootstrap/plugins/datatables-responsive/dataTables.responsive.scss">
+      <publishTime>05/20/2017 18:27:43</publishTime>
+    </File>
+    <File Include="assets/libs/bootstrap/plugins/datatables/dataTables.bootstrap.css">
+      <publishTime>05/20/2017 18:27:43</publishTime>
+    </File>
+    <File Include="assets/libs/bootstrap/plugins/datatables/dataTables.bootstrap.js">
+      <publishTime>05/20/2017 18:27:43</publishTime>
+    </File>
+    <File Include="assets/libs/bootstrap/plugins/datatables/dataTables.bootstrap.min.css">
+      <publishTime>05/20/2017 18:27:43</publishTime>
+    </File>
+    <File Include="assets/libs/bootstrap/plugins/datatables/dataTables.bootstrap.min.js">
+      <publishTime>05/20/2017 18:27:43</publishTime>
+    </File>
+    <File Include="assets/libs/bootstrap/plugins/datatables/dataTables.bootstrap4.css">
+      <publishTime>05/20/2017 18:27:43</publishTime>
+    </File>
+    <File Include="assets/libs/bootstrap/plugins/datatables/dataTables.bootstrap4.js">
+      <publishTime>05/20/2017 18:27:43</publishTime>
+    </File>
+    <File Include="assets/libs/bootstrap/plugins/datatables/dataTables.bootstrap4.min.css">
+      <publishTime>05/20/2017 18:27:43</publishTime>
+    </File>
+    <File Include="assets/libs/bootstrap/plugins/datatables/dataTables.bootstrap4.min.js">
+      <publishTime>05/20/2017 18:27:43</publishTime>
+    </File>
+    <File Include="assets/libs/bootstrap/plugins/datatables/dataTables.foundation.css">
+      <publishTime>05/20/2017 18:27:43</publishTime>
+    </File>
+    <File Include="assets/libs/bootstrap/plugins/datatables/dataTables.foundation.js">
+      <publishTime>05/20/2017 18:27:43</publishTime>
+    </File>
+    <File Include="assets/libs/bootstrap/plugins/datatables/dataTables.foundation.min.css">
+      <publishTime>05/20/2017 18:27:43</publishTime>
+    </File>
+    <File Include="assets/libs/bootstrap/plugins/datatables/dataTables.foundation.min.js">
+      <publishTime>05/20/2017 18:27:43</publishTime>
+    </File>
+    <File Include="assets/libs/bootstrap/plugins/datatables/dataTables.jqueryui.css">
+      <publishTime>05/20/2017 18:27:43</publishTime>
+    </File>
+    <File Include="assets/libs/bootstrap/plugins/datatables/dataTables.jqueryui.js">
+      <publishTime>05/20/2017 18:27:43</publishTime>
+    </File>
+    <File Include="assets/libs/bootstrap/plugins/datatables/dataTables.jqueryui.min.css">
+      <publishTime>05/20/2017 18:27:43</publishTime>
+    </File>
+    <File Include="assets/libs/bootstrap/plugins/datatables/dataTables.jqueryui.min.js">
+      <publishTime>05/20/2017 18:27:43</publishTime>
+    </File>
+    <File Include="assets/libs/bootstrap/plugins/datatables/dataTables.material.css">
+      <publishTime>05/20/2017 18:27:43</publishTime>
+    </File>
+    <File Include="assets/libs/bootstrap/plugins/datatables/dataTables.material.js">
+      <publishTime>05/20/2017 18:27:43</publishTime>
+    </File>
+    <File Include="assets/libs/bootstrap/plugins/datatables/dataTables.material.min.css">
+      <publishTime>05/20/2017 18:27:43</publishTime>
+    </File>
+    <File Include="assets/libs/bootstrap/plugins/datatables/dataTables.material.min.js">
+      <publishTime>05/20/2017 18:27:43</publishTime>
+    </File>
+    <File Include="assets/libs/bootstrap/plugins/datatables/dataTables.semanticui.css">
+      <publishTime>05/20/2017 18:27:43</publishTime>
+    </File>
+    <File Include="assets/libs/bootstrap/plugins/datatables/dataTables.semanticui.js">
+      <publishTime>05/20/2017 18:27:43</publishTime>
+    </File>
+    <File Include="assets/libs/bootstrap/plugins/datatables/dataTables.semanticui.min.css">
+      <publishTime>05/20/2017 18:27:43</publishTime>
+    </File>
+    <File Include="assets/libs/bootstrap/plugins/datatables/dataTables.semanticui.min.js">
+      <publishTime>05/20/2017 18:27:43</publishTime>
+    </File>
+    <File Include="assets/libs/bootstrap/plugins/datatables/dataTables.uikit.css">
+      <publishTime>05/20/2017 18:27:43</publishTime>
+    </File>
+    <File Include="assets/libs/bootstrap/plugins/datatables/dataTables.uikit.js">
+      <publishTime>05/20/2017 18:27:43</publishTime>
+    </File>
+    <File Include="assets/libs/bootstrap/plugins/datatables/dataTables.uikit.min.css">
+      <publishTime>05/20/2017 18:27:43</publishTime>
+    </File>
+    <File Include="assets/libs/bootstrap/plugins/datatables/dataTables.uikit.min.js">
+      <publishTime>05/20/2017 18:27:43</publishTime>
+    </File>
+    <File Include="assets/libs/bootstrap/plugins/datatables/jquery.dataTables.css">
+      <publishTime>05/20/2017 18:27:43</publishTime>
+    </File>
+    <File Include="assets/libs/bootstrap/plugins/datatables/jquery.dataTables.js">
+      <publishTime>05/20/2017 18:27:43</publishTime>
+    </File>
+    <File Include="assets/libs/bootstrap/plugins/datatables/jquery.dataTables.min.css">
+      <publishTime>05/20/2017 18:27:43</publishTime>
+    </File>
+    <File Include="assets/libs/bootstrap/plugins/datatables/jquery.dataTables.min.js">
+      <publishTime>05/20/2017 18:27:43</publishTime>
+    </File>
+    <File Include="assets/libs/bootstrap/plugins/datatables/jquery.dataTables_themeroller.css">
+      <publishTime>05/20/2017 18:27:43</publishTime>
+    </File>
+    <File Include="assets/libs/bootstrap/plugins/datatables/jquery.js">
+      <publishTime>05/20/2017 18:27:43</publishTime>
+    </File>
+    <File Include="assets/libs/bootstrap/plugins/sb-admin2/sb-admin-2.css">
+      <publishTime>05/24/2017 17:47:02</publishTime>
+    </File>
+    <File Include="assets/libs/bootstrap/plugins/sb-admin2/sb-admin-2.js">
+      <publishTime>05/20/2017 18:27:43</publishTime>
+    </File>
+    <File Include="assets/libs/bootstrap/plugins/sb-admin2/sb-admin-2.min.css">
+      <publishTime>05/20/2017 18:27:43</publishTime>
+    </File>
+    <File Include="assets/libs/bootstrap/plugins/sb-admin2/sb-admin-2.min.js">
+      <publishTime>05/20/2017 18:27:43</publishTime>
+    </File>
+    <File Include="assets/libs/bootstrap/plugins/twitter-bootstrap-wizard/jquery.bootstrap.wizard.js">
+      <publishTime>05/24/2017 17:47:02</publishTime>
+    </File>
+    <File Include="assets/libs/bootstrap/plugins/twitter-bootstrap-wizard/jquery.bootstrap.wizard.min.js">
+      <publishTime>05/24/2017 17:47:02</publishTime>
+    </File>
+    <File Include="assets/libs/bootstrap/plugins/validator/validator.js">
+      <publishTime>05/24/2017 17:47:02</publishTime>
+    </File>
+    <File Include="assets/libs/bootstrap/plugins/validator/validator.min.js">
+      <publishTime>05/24/2017 17:47:02</publishTime>
+    </File>
+    <File Include="assets/libs/chartist/chartist.css">
+      <publishTime>05/20/2017 18:27:43</publishTime>
+    </File>
+    <File Include="assets/libs/chartist/chartist.css.map">
+      <publishTime>05/20/2017 18:27:43</publishTime>
+    </File>
+    <File Include="assets/libs/chartist/chartist.js">
+      <publishTime>05/20/2017 18:27:43</publishTime>
+    </File>
+    <File Include="assets/libs/chartist/chartist.min.css">
+      <publishTime>05/20/2017 18:27:43</publishTime>
+    </File>
+    <File Include="assets/libs/chartist/chartist.min.js">
+      <publishTime>05/20/2017 18:27:43</publishTime>
+    </File>
+    <File Include="assets/libs/chartist/chartist.min.js.map">
+      <publishTime>05/20/2017 18:27:43</publishTime>
+    </File>
+    <File Include="assets/libs/font-awesome/font-awesome.css">
+      <publishTime>05/20/2017 18:27:43</publishTime>
+    </File>
+    <File Include="assets/libs/font-awesome/font-awesome.css.map">
+      <publishTime>05/20/2017 18:27:43</publishTime>
+    </File>
+    <File Include="assets/libs/font-awesome/font-awesome.min.css">
+      <publishTime>05/20/2017 18:27:43</publishTime>
+    </File>
+    <File Include="assets/libs/jquery/jquery.js">
+      <publishTime>05/20/2017 18:27:43</publishTime>
+    </File>
+    <File Include="assets/libs/jquery/jquery.min.js">
+      <publishTime>05/20/2017 18:27:43</publishTime>
+    </File>
+    <File Include="assets/libs/jquery/plugins/metisMenu/metisMenu.css">
+      <publishTime>05/20/2017 18:27:43</publishTime>
+    </File>
+    <File Include="assets/libs/jquery/plugins/metisMenu/metisMenu.js">
+      <publishTime>05/20/2017 18:27:43</publishTime>
+    </File>
+    <File Include="assets/libs/jquery/plugins/metisMenu/metisMenu.min.css">
+      <publishTime>05/20/2017 18:27:43</publishTime>
+    </File>
+    <File Include="assets/libs/jquery/plugins/metisMenu/metisMenu.min.js">
+      <publishTime>05/20/2017 18:27:43</publishTime>
+    </File>
+    <File Include="assets/libs/toastr/toastr.min.css">
+      <publishTime>05/20/2017 18:31:05</publishTime>
+    </File>
+    <File Include="assets/libs/toastr/toastr.min.js">
+      <publishTime>05/20/2017 18:31:05</publishTime>
+    </File>
+    <File Include="assets/libs/toastr/toastrConfig.js">
+      <publishTime>05/24/2017 17:47:02</publishTime>
+    </File>
+    <File Include="bin/Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll">
+      <publishTime>06/15/2015 02:06:24</publishTime>
+    </File>
+    <File Include="bin/roslyn/csc.exe">
+      <publishTime>05/20/2017 18:27:46</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.Build.Tasks.CodeAnalysis.dll">
+      <publishTime>05/20/2017 18:27:46</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.CodeAnalysis.CSharp.dll">
+      <publishTime>05/20/2017 18:27:46</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.CodeAnalysis.dll">
+      <publishTime>05/20/2017 18:27:46</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.CodeAnalysis.VisualBasic.dll">
+      <publishTime>05/20/2017 18:27:46</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.CSharp.Core.targets">
+      <publishTime>05/20/2017 18:27:46</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.VisualBasic.Core.targets">
+      <publishTime>05/20/2017 18:27:46</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Collections.Immutable.dll">
+      <publishTime>05/20/2017 18:27:46</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Reflection.Metadata.dll">
+      <publishTime>05/20/2017 18:27:46</publishTime>
+    </File>
+    <File Include="bin/roslyn/vbc.exe">
+      <publishTime>05/20/2017 18:27:46</publishTime>
+    </File>
+    <File Include="bin/roslyn/VBCSCompiler.exe">
+      <publishTime>05/20/2017 18:27:46</publishTime>
+    </File>
+    <File Include="bin/roslyn/VBCSCompiler.exe.config">
+      <publishTime>05/20/2017 18:27:46</publishTime>
+    </File>
+    <File Include="bin/WEB.dll">
+      <publishTime>05/25/2017 20:23:19</publishTime>
+    </File>
+    <File Include="bin/WEB.pdb">
+      <publishTime>05/25/2017 20:23:19</publishTime>
+    </File>
+    <File Include="index.html">
+      <publishTime>05/24/2017 17:47:02</publishTime>
+    </File>
+    <File Include="packages.config">
+      <publishTime>05/20/2017 18:27:44</publishTime>
+    </File>
+    <File Include="Web.config">
+      <publishTime>05/25/2017 20:23:32</publishTime>
+    </File>
+  </ItemGroup>
+</Project>

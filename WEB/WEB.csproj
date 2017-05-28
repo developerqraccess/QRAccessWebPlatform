@@ -187,6 +187,7 @@
     <Content Include="assets\fonts\glyphicons\glyphicons-halflings-regular.woff" />
     <Content Include="assets\img\datatables\Sorting icons.psd" />
     <Content Include="assets\libs\toastr\toastr.min.css" />
+    <None Include="Properties\PublishProfiles\8hkb.pubxml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

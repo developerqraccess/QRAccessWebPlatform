@@ -1,0 +1,112 @@
+﻿<link href="../../../assets/css/frame.css" rel="stylesheet" />
+<!--===========================================================================================-->
+
+<div id="wrapper" data-ng-controller="frameController">
+    <!-- Navigation -->
+    <nav class="navbar navbar-inverse navbar-static-top" role="navigation" style="margin-bottom: 0">
+        <div class="navbar-header">
+            <button type="button" id="btnMenu" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#">
+                <img id="imglogo" src="assets/img/logos/logo142x41.png" />
+            </a>
+        </div>
+        <!-- /.navbar-header -->
+        <ul class="hide-xs nav navbar-top-links navbar-right">
+            <li class="dropdown">
+                <a class="dropdown-toggle" data-toggle="dropdown" href="">
+                    <div class="icoCollapse">
+                        <i class="fa fa-user fa-fw"></i>
+                    </div>
+                    <div class="txtCollapse">
+                        {{authentication.userName}} <br /><h5><small>ADMINISTRADOR</small></h5>
+                    </div>
+                    <div class="icoCollapse">
+                        <i class="fa fa-caret-down"></i>
+                    </div>
+
+                </a>
+                <ul class="dropdown-menu dropdown-user">
+                    <li>
+                        <a href="#/profile"><i class="fa fa-user fa-fw"></i> Perfil</a>
+                    </li>
+                    <li>
+                        <a href="#"><i class="fa fa-gear fa-fw"></i> Configuración</a>
+                    </li>
+                    <li class="divider"></li>
+                    <li>
+                        <a href="#" data-ng-click="logOut()"><i class="fa fa-sign-out fa-fw"></i> Salir</a>
+                    </li>
+                </ul>
+                <!-- /.dropdown-user -->
+            </li>
+            <!-- /.dropdown -->
+        </ul>
+        <!-- /.navbar-top-links -->
+        <div class="navbar-default sidebar" role="navigation">
+            <div class="sidebar-nav navbar-collapse">
+                <ul class="nav" id="side-menu">
+                    <li class="hide-md">
+                        <a href="#">
+                            <i class="fa fa-user fa-fw"></i>
+                            {{authentication.userName}}
+                            <span class="fa arrow"></span>
+                        </a>
+                        <ul class="nav nav-second-level">
+                            <li>
+                                <a href="#/profile"><i class="fa fa-user fa-fw"></i> Perfil</a>
+                            </li>
+                            <li>
+                                <a><i class="fa fa-gear fa-fw"></i> Configuración</a>
+                            </li>
+                            <li class="divider"></li>
+                            <li>
+                                <a href="#" data-ng-click="logOut()"><i class="fa fa-sign-out fa-fw"></i> Salir</a>
+                            </li>
+                        </ul>
+                        <!-- /.dropdown-user -->
+                    </li>
+                    <!--<li class="sidebar-search">
+                        <div class="input-group custom-search-form">
+                            <input type="text" class="form-control" placeholder="Search...">
+                            <span class="input-group-btn">
+                                <button class="btn btn-default" type="button">
+                                    <i class="fa fa-search"></i>
+                                </button>
+                            </span>
+                        </div> -->
+                    <!-- /input-group -->
+                    <!-- </li> -->
+                    <li>
+                        <a href="#/dashboard"><i class="fa fa-dashboard fa-fw"></i> Dashboard</a>
+                    </li>
+                    <li>
+                        <a href="#"><i class="fa fa-users fa-fw"></i> Usuarios<span class="fa arrow"></span></a>
+                        <ul class="nav nav-second-level">
+                            <li>
+                                <a href="#/presignup">Registro de propietarios</a>
+                            </li>
+                        </ul>
+                        <!-- /.nav-second-level -->
+                    </li>
+                    <li>
+                        <a href="#"><i class="fa fa-bar-chart fa-fw"></i> Reportes<span class="fa arrow"></span></a>
+                        <ul class="nav nav-second-level">
+                            <li>
+                                <a href="#/orders">Ordenes</a>
+                                <!-- menu -->
+                            </li>
+                        </ul>
+                        <!-- /.nav-second-level -->
+                    </li>
+                </ul>
+            </div>
+            <!-- /.sidebar-collapse -->
+        </div>
+        <!-- /.navbar-static-side -->
+    </nav>
+</div>

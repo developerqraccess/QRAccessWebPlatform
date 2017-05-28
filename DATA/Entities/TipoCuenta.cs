@@ -27,6 +27,9 @@ namespace DATA.Entities
 
         public bool? Activo { get; set; }
 
+        [StringLength(100)]
+        public string Permisos { get; set; }
+
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<Cuenta> Cuenta { get; set; }
     }
