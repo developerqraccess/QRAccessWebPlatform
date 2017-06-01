@@ -30,6 +30,17 @@ namespace API.Controllers
             return Ok(_mdl.GetSignUpModel());
         }
 
+
+        [Authorize]
+        [HttpGet]
+        [Route("GetAll")]
+        public IHttpActionResult GetAll()
+        {
+            return Ok(_mdl.GetLisUsuarios());
+        }
+
+
+
         
         [Authorize]
         [HttpPost]

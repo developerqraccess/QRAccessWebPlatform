@@ -1,0 +1,66 @@
+﻿<div id="page-wrapper">
+    <div class="row">
+        <div class="col-lg-12">
+            <h1 class="page-header">Lista de Usuarios Creados</h1>
+        </div>
+        <!-- /.col-lg-12 -->
+    </div>
+    <!-- /.row -->  
+    <div class="row">
+        <div class="col-lg-12">
+            <div class="table-responsive">
+                <table class="table table-striped">
+                    <thead>
+                        <tr>
+                            <th>Identificación</th>
+                            <th>Correo</th>
+                            <th>Nombre</th>
+                            <th>Apellidos</th>
+                            <th>Tipo Cuenta</th>
+                            <th>Direccion</th>
+                            <th>Telefono</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr ng-repeat="user in usuarios">
+                            <td>{{user.cedula}}</td>
+                            <td>{{user.correo}}</td>
+                            <td>{{user.nombre}}</td>
+                            <td>{{user.apellidos}}</td>
+                            <td>{{user.tipoCuenta}}</td>
+                            <td>{{user.direccion}}</td>
+                            <td>{{user.telefono}}</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+
+                <table id="example" class="display" cellspacing="0" width="100%">
+                    <thead>
+                        <tr>
+                            <th>Name</th>
+                            <th>Position</th>
+                            <th>Office</th>
+                            <th>Extn.</th>
+                            <th>Start date</th>
+                            <th>Salary</th>
+                        </tr>
+                    </thead>
+                    <tfoot>
+                        <tr>
+                            <th>Name</th>
+                            <th>Position</th>
+                            <th>Office</th>
+                            <th>Extn.</th>
+                            <th>Start date</th>
+                            <th>Salary</th>
+                        </tr>
+                    </tfoot>
+                </table>
+
+            </div>  
+        </div>
+    </div>
+</div>
+
+

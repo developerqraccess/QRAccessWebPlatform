@@ -1,4 +1,5 @@
-﻿using DATA.Entities;
+﻿using API.DTO;
+using DATA.Entities;
 using System;
 using System.Collections.Generic;
 using System.Data.Entity;
@@ -32,7 +33,37 @@ namespace API.Models
                Movil = d.Movil,
                Telefono = d.Telefono
            }).ToList();
-        }  
+        }
+
+
+        public object GetLisUsuarios() 
+        {
+            var lista =  _cntx.Usuarios.Select(d => new LstUsuariosDTO
+            {
+                Id = d.Id,
+                Cedula = d.Cedula,
+                Nombre = d.Nombre,
+                Apellidos = d.Apellidos,
+                FechaNacimiento = d.FechaNacimiento,
+                Correo = d.Correo,
+                Direccion = d.Direccion,
+                Movil = d.Movil,
+                Telefono = d.Telefono,
+            }).ToList();
+
+
+
+
+            foreach (LstUsuariosDTO usr in lista) 
+            {
+                Cuenta cuenta =  _cntx.Cuentas.Where(c=> c.IdUsuario == usr.Id).FirstOrDefault();
+                usr.Estado = cuenta.Estado;
+                usr.TipoCuenta = _cntx.TipoCuentas.Where(tc => tc.Id == cuenta.Tipo).Select(c => c.Descripcion).FirstOrDefault().ToString();
+            }
+
+            return lista;
+        
+        }
 
 
         public object GetTypeAccount() 

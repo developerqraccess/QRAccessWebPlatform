@@ -30,6 +30,7 @@ app.config(function ($stateProvider, $urlRouterProvider) {
                 }
             }
         })
+        
         .state('dashboard', {
             url: '/dashboard',
             views: {
@@ -56,6 +57,19 @@ app.config(function ($stateProvider, $urlRouterProvider) {
                 }
             }
         })
+        .state('users', {
+            url: '/users',
+             views: {
+                 'header': {
+                     templateUrl: 'app/views/main/frame.html',
+                     controller: 'frameController'
+                 },
+                 'content': {
+                     templateUrl: 'app/views/pages/users.html',
+                     controller: 'usersController'
+                 }
+             }
+         })
         .state('orders', {
             url: '/orders',
             views: {
