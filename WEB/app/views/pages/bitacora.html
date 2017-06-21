@@ -1,0 +1,40 @@
+﻿<div id="page-wrapper">
+    <div class="row">
+        <div class="col-lg-12">
+            <h1 class="page-header">Bitacora Sistema</h1>
+        </div>
+        <!-- /.col-lg-12 -->
+    </div>
+    <!-- /.row -->
+    <div class="row">
+        <div class="col-lg-12">
+            <div class="table-responsive">
+
+                <table datatable="ng" class="row-border hover">
+                    <thead>
+                        <tr>
+                            <th>Ip</th>
+                            <th>Usuario</th>
+                            <th>Tipo Inicio</th>
+                            <th>Dispositivo</th>
+                            <th>Fecha Ingreso</th>
+                            <th>Fecha Salida</th>
+                            <th>Token</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr ng-repeat="bitacora in bitacoras">
+                            <td>{{bitacora.ipDispositivo}}</td>
+                            <td>{{bitacora.userName}}</td>
+                            <td>{{bitacora.tipoInicio}}</td>
+                            <td>{{bitacora.nombrePc}}</td>
+                            <td>{{bitacora.fechayHoraIngreso}}</td>
+                            <td>{{bitacora.fechayHoraSalida}}</td>
+                            <td>{{bitacora.token}}</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>

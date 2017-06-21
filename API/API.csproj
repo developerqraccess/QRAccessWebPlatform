@@ -146,12 +146,21 @@
     <Compile Include="AuthContext.cs" />
     <Compile Include="AuthRepository.cs" />
     <Compile Include="Controllers\AccountController.cs" />
+    <Compile Include="Controllers\BitacoraController.cs" />
     <Compile Include="Controllers\OrdersController.cs" />
+    <Compile Include="Controllers\PermisionsController.cs" />
     <Compile Include="Controllers\PreSignUpController.cs" />
     <Compile Include="Controllers\RefreshTokensController.cs" />
     <Compile Include="Controllers\SignUpCompleteController.cs" />
     <Compile Include="Controllers\TypeAccountController.cs" />
+    <Compile Include="DTO\BitacoraDTO.cs" />
+    <Compile Include="DTO\LstUsuariosDTO.cs" />
+    <Compile Include="DTO\PermisosUsuarioDTO.cs" />
     <Compile Include="Helper.cs" />
+    <Compile Include="Migrations\201705210519512_Prueba20170520.cs" />
+    <Compile Include="Migrations\201705210519512_Prueba20170520.Designer.cs">
+      <DependentUpon>201705210519512_Prueba20170520.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\201705232327414_20170523.1.cs" />
     <Compile Include="Migrations\201705232327414_20170523.1.Designer.cs">
       <DependentUpon>201705232327414_20170523.1.cs</DependentUpon>
@@ -160,7 +169,21 @@
     <Compile Include="Migrations\201705261405252_AddCampoPermisosEnTipoCuenta.Designer.cs">
       <DependentUpon>201705261405252_AddCampoPermisosEnTipoCuenta.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201706121949255_prueba.cs" />
+    <Compile Include="Migrations\201706121949255_prueba.Designer.cs">
+      <DependentUpon>201706121949255_prueba.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201706170342218_AddBitacora.cs" />
+    <Compile Include="Migrations\201706170342218_AddBitacora.Designer.cs">
+      <DependentUpon>201706170342218_AddBitacora.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201706170438014_AddCampoIpDevice.cs" />
+    <Compile Include="Migrations\201706170438014_AddCampoIpDevice.Designer.cs">
+      <DependentUpon>201706170438014_AddCampoIpDevice.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
+    <Compile Include="Models\BitacoraModel.cs" />
+    <Compile Include="Models\PermisionsModel.cs" />
     <Compile Include="Models\SignUpModel.cs" />
     <Compile Include="Models\UserModel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -187,11 +210,23 @@
     </None>
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="Migrations\201705210519512_Prueba20170520.resx">
+      <DependentUpon>201705210519512_Prueba20170520.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201705232327414_20170523.1.resx">
       <DependentUpon>201705232327414_20170523.1.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201705261405252_AddCampoPermisosEnTipoCuenta.resx">
       <DependentUpon>201705261405252_AddCampoPermisosEnTipoCuenta.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201706121949255_prueba.resx">
+      <DependentUpon>201706121949255_prueba.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201706170342218_AddBitacora.resx">
+      <DependentUpon>201706170342218_AddBitacora.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201706170438014_AddCampoIpDevice.resx">
+      <DependentUpon>201706170438014_AddCampoIpDevice.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

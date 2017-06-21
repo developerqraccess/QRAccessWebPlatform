@@ -109,9 +109,13 @@ G:\Serviglobal\AplicacionWebQr\API\bin\System.Web.Http.Owin.xml
 G:\Serviglobal\AplicacionWebQr\API\bin\System.Web.Http.WebHost.xml
 G:\Serviglobal\AplicacionWebQr\API\bin\Newtonsoft.Json.xml
 G:\Serviglobal\AplicacionWebQr\API\bin\System.Net.Http.Formatting.xml
-G:\Serviglobal\AplicacionWebQr\API\obj\Debug\API.csprojResolveAssemblyReference.cache
 G:\Serviglobal\AplicacionWebQr\API\obj\Debug\API.Migrations._201705231.resources
 G:\Serviglobal\AplicacionWebQr\API\obj\Debug\API.csproj.GenerateResource.Cache
 G:\Serviglobal\AplicacionWebQr\API\obj\Debug\API.dll
 G:\Serviglobal\AplicacionWebQr\API\obj\Debug\API.pdb
 G:\Serviglobal\AplicacionWebQr\API\obj\Debug\API.Migrations.AddCampoPermisosEnTipoCuenta.resources
+G:\Serviglobal\AplicacionWebQr\API\obj\Debug\API.Migrations.Prueba20170520.resources
+G:\Serviglobal\AplicacionWebQr\API\obj\Debug\API.Migrations.prueba.resources
+G:\Serviglobal\AplicacionWebQr\API\obj\Debug\API.csprojResolveAssemblyReference.cache
+G:\Serviglobal\AplicacionWebQr\API\obj\Debug\API.Migrations.AddBitacora.resources
+G:\Serviglobal\AplicacionWebQr\API\obj\Debug\API.Migrations.AddCampoIpDevice.resources

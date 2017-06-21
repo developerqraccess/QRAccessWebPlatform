@@ -11,4 +11,11 @@ namespace DATA.Models
         JavaScript = 0,
         NativeConfidential = 1
     };
+
+
+    public enum TipoInicio { 
+        Deskpto = 0,
+        AppMovilAndroid = 1,
+        AppWeb = 2
+    };
 }

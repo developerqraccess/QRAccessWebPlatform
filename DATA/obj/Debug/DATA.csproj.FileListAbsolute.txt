@@ -7,4 +7,3 @@ G:\Serviglobal\AplicacionWebQr\DATA\bin\Debug\DATA.dll
 G:\Serviglobal\AplicacionWebQr\DATA\bin\Debug\DATA.pdb
 G:\Serviglobal\AplicacionWebQr\DATA\obj\Debug\DATA.dll
 G:\Serviglobal\AplicacionWebQr\DATA\obj\Debug\DATA.pdb
-G:\Serviglobal\AplicacionWebQr\DATA\obj\Debug\DATA.csprojResolveAssemblyReference.cache

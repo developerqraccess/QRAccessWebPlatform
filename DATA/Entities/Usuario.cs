@@ -44,5 +44,9 @@ namespace DATA.Entities
 
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<Cuenta> Cuenta { get; set; }
+
+        public virtual ICollection<PermisosXUsuario> PermisosXUsuarios { get; set; }
+
+        
     }
 }

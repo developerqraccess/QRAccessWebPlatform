@@ -41,12 +41,15 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Entities\Bitacora.cs" />
     <Compile Include="Entities\Client.cs" />
     <Compile Include="Entities\Codigo.cs" />
     <Compile Include="Entities\CodigoCuenta.cs" />
     <Compile Include="Entities\Cuenta.cs" />
     <Compile Include="Entities\EstadoCodigoCuenta.cs" />
     <Compile Include="Entities\EstadoCuenta.cs" />
+    <Compile Include="Entities\Permisos.cs" />
+    <Compile Include="Entities\PermisosXUsuario.cs" />
     <Compile Include="Entities\RefreshToken.cs" />
     <Compile Include="Entities\TipoCuenta.cs" />
     <Compile Include="Entities\Usuario.cs" />

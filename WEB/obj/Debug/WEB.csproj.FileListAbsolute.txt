@@ -37,3 +37,4 @@ G:\Serviglobal\AplicacionWebQr\WEB\bin\Microsoft.CodeDom.Providers.DotNetCompile
 G:\Serviglobal\AplicacionWebQr\WEB\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
 G:\Serviglobal\AplicacionWebQr\WEB\obj\Debug\WEB.dll
 G:\Serviglobal\AplicacionWebQr\WEB\obj\Debug\WEB.pdb
+G:\Serviglobal\AplicacionWebQr\WEB\obj\Debug\WEB.csprojResolveAssemblyReference.cache

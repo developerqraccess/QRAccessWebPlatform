@@ -1,5 +1,5 @@
 ﻿
-var app = angular.module('app', ['ui.router', 'LocalStorageModule', 'angular-loading-bar']);
+var app = angular.module('app', ['ui.router', 'datatables', 'LocalStorageModule', 'angular-loading-bar']);
 
 app.config(function ($stateProvider, $urlRouterProvider) {
     $stateProvider
@@ -30,7 +30,19 @@ app.config(function ($stateProvider, $urlRouterProvider) {
                 }
             }
         })
-        
+        .state('permisions', {
+            url: '/permisions',
+            views: {
+                'header': {
+                    templateUrl: 'app/views/main/frame.html',
+                    controller: 'frameController'
+                },
+                'content': {
+                    templateUrl: 'app/views/pages/permisionsforusers.html',
+                    controller: 'usersController'
+                }
+            }
+        })
         .state('dashboard', {
             url: '/dashboard',
             views: {
@@ -80,6 +92,19 @@ app.config(function ($stateProvider, $urlRouterProvider) {
                 'content': {
                     templateUrl: 'app/views/pages/orders.html',
                     controller: 'ordersController'
+                }
+            }
+        })
+        .state('bitacora', {
+            url: '/bitacora',
+            views: {
+                'header': {
+                    templateUrl: 'app/views/main/frame.html',
+                    controller: 'frameController'
+                },
+                'content': {
+                    templateUrl: 'app/views/pages/bitacora.html',
+                    controller: 'bitacoraController'
                 }
             }
         })

@@ -10,7 +10,7 @@ editando este archivo MSBuild. Para conocer más acerca de esto, visite http://g
   </PropertyGroup>
   <ItemGroup>
     <File Include="app/app.js">
-      <publishTime>05/25/2017 08:17:11</publishTime>
+      <publishTime>06/13/2017 19:31:39</publishTime>
     </File>
     <File Include="app/controllers/account/loginController.js">
       <publishTime>05/20/2017 18:27:42</publishTime>
@@ -43,7 +43,10 @@ editando este archivo MSBuild. Para conocer más acerca de esto, visite http://g
       <publishTime>05/20/2017 18:27:42</publishTime>
     </File>
     <File Include="app/controllers/pages/preSignUpController.js">
-      <publishTime>05/25/2017 14:18:13</publishTime>
+      <publishTime>06/13/2017 21:08:56</publishTime>
+    </File>
+    <File Include="app/controllers/pages/usersController.js">
+      <publishTime>06/13/2017 21:08:53</publishTime>
     </File>
     <File Include="app/controllers/refreshController.js">
       <publishTime>05/20/2017 18:27:42</publishTime>
@@ -76,7 +79,10 @@ editando este archivo MSBuild. Para conocer más acerca de esto, visite http://g
       <publishTime>05/20/2017 18:27:42</publishTime>
     </File>
     <File Include="app/services/pages/preSignUpService.js">
-      <publishTime>05/25/2017 11:44:55</publishTime>
+      <publishTime>05/31/2017 19:20:47</publishTime>
+    </File>
+    <File Include="app/services/pages/usersService.js">
+      <publishTime>06/13/2017 20:51:14</publishTime>
     </File>
     <File Include="app/services/tokensManagerService.js">
       <publishTime>05/20/2017 18:27:42</publishTime>
@@ -91,16 +97,16 @@ editando este archivo MSBuild. Para conocer más acerca de esto, visite http://g
       <publishTime>05/20/2017 18:27:42</publishTime>
     </File>
     <File Include="app/views/main/frame.html">
-      <publishTime>05/24/2017 20:48:55</publishTime>
+      <publishTime>06/13/2017 18:26:37</publishTime>
     </File>
     <File Include="app/views/main/login.html">
-      <publishTime>05/20/2017 18:27:42</publishTime>
+      <publishTime>01/06/2017 18:43:46</publishTime>
     </File>
     <File Include="app/views/main/profile.html">
       <publishTime>05/24/2017 17:47:02</publishTime>
     </File>
     <File Include="app/views/main/signUpComplete.html">
-      <publishTime>05/24/2017 17:47:02</publishTime>
+      <publishTime>05/31/2017 19:24:42</publishTime>
     </File>
     <File Include="app/views/orders.html">
       <publishTime>05/20/2017 18:27:42</publishTime>
@@ -114,8 +120,14 @@ editando este archivo MSBuild. Para conocer más acerca de esto, visite http://g
     <File Include="app/views/pages/orders.html">
       <publishTime>05/24/2017 17:47:02</publishTime>
     </File>
+    <File Include="app/views/pages/permisionsforusers.html">
+      <publishTime>06/13/2017 21:09:15</publishTime>
+    </File>
     <File Include="app/views/pages/signUp.html">
-      <publishTime>05/25/2017 10:50:29</publishTime>
+      <publishTime>05/31/2017 19:24:42</publishTime>
+    </File>
+    <File Include="app/views/pages/users.html">
+      <publishTime>01/06/2017 19:11:27</publishTime>
     </File>
     <File Include="app/views/refresh.html">
       <publishTime>05/20/2017 18:27:42</publishTime>
@@ -125,6 +137,9 @@ editando este archivo MSBuild. Para conocer más acerca de esto, visite http://g
     </File>
     <File Include="app/views/tokens.html">
       <publishTime>05/20/2017 18:27:42</publishTime>
+    </File>
+    <File Include="assets/css/external/jquery.dataTables.min.css">
+      <publishTime>01/06/2017 18:25:21</publishTime>
     </File>
     <File Include="assets/css/external/login.css">
       <publishTime>05/20/2017 18:27:42</publishTime>
@@ -210,6 +225,9 @@ editando este archivo MSBuild. Para conocer más acerca de esto, visite http://g
     <File Include="assets/js/index.js">
       <publishTime>05/20/2017 18:27:42</publishTime>
     </File>
+    <File Include="assets/js/jquery.dataTables.min.js">
+      <publishTime>01/06/2017 18:25:14</publishTime>
+    </File>
     <File Include="assets/js/main/signUpComplete.js">
       <publishTime>05/24/2017 17:47:02</publishTime>
     </File>
@@ -227,6 +245,9 @@ editando este archivo MSBuild. Para conocer más acerca de esto, visite http://g
     </File>
     <File Include="assets/libs/angularJS/1.2.32/angular.min.js">
       <publishTime>05/20/2017 18:27:42</publishTime>
+    </File>
+    <File Include="assets/libs/angularJS/plugins/angular-datatables/angular-datatables.js">
+      <publishTime>01/08/2016 23:19:50</publishTime>
     </File>
     <File Include="assets/libs/angularJS/plugins/angular-route/angular-route.min.js">
       <publishTime>05/20/2017 18:27:42</publishTime>
@@ -460,7 +481,7 @@ editando este archivo MSBuild. Para conocer más acerca de esto, visite http://g
       <publishTime>05/20/2017 18:27:43</publishTime>
     </File>
     <File Include="assets/libs/jquery/jquery.min.js">
-      <publishTime>05/20/2017 18:27:43</publishTime>
+      <publishTime>05/31/2017 19:23:21</publishTime>
     </File>
     <File Include="assets/libs/jquery/plugins/metisMenu/metisMenu.css">
       <publishTime>05/20/2017 18:27:43</publishTime>
@@ -484,7 +505,7 @@ editando este archivo MSBuild. Para conocer más acerca de esto, visite http://g
       <publishTime>05/24/2017 17:47:02</publishTime>
     </File>
     <File Include="bin/Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll">
-      <publishTime>06/15/2015 02:06:24</publishTime>
+      <publishTime>06/11/2017 15:37:23</publishTime>
     </File>
     <File Include="bin/roslyn/csc.exe">
       <publishTime>05/20/2017 18:27:46</publishTime>
@@ -523,19 +544,19 @@ editando este archivo MSBuild. Para conocer más acerca de esto, visite http://g
       <publishTime>05/20/2017 18:27:46</publishTime>
     </File>
     <File Include="bin/WEB.dll">
-      <publishTime>05/25/2017 20:23:19</publishTime>
+      <publishTime>06/13/2017 19:25:26</publishTime>
     </File>
     <File Include="bin/WEB.pdb">
-      <publishTime>05/25/2017 20:23:19</publishTime>
+      <publishTime>06/13/2017 19:25:26</publishTime>
     </File>
     <File Include="index.html">
-      <publishTime>05/24/2017 17:47:02</publishTime>
+      <publishTime>01/06/2017 18:47:51</publishTime>
     </File>
     <File Include="packages.config">
       <publishTime>05/20/2017 18:27:44</publishTime>
     </File>
     <File Include="Web.config">
-      <publishTime>05/25/2017 20:23:32</publishTime>
+      <publishTime>06/13/2017 15:39:11</publishTime>
     </File>
   </ItemGroup>
 </Project>

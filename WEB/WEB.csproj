@@ -67,8 +67,17 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="app\controllers\main\profileController.js" />
+    <Content Include="app\controllers\pages\bitacoraController.js" />
+    <Content Include="app\controllers\pages\usersController.js" />
+    <Content Include="app\services\pages\bitacoraService.js" />
+    <Content Include="app\services\pages\usersService.js" />
     <Content Include="app\views\main\login.html" />
     <Content Include="app\views\main\profile.html" />
+    <Content Include="app\views\pages\bitacora.html" />
+    <Content Include="app\views\pages\permisionsforusers.html" />
+    <Content Include="app\views\pages\users.html" />
+    <Content Include="assets\css\external\jquery.dataTables.min.css" />
+    <Content Include="assets\js\jquery.dataTables.min.js" />
     <Content Include="assets\css\external\login.css" />
     <Content Include="assets\css\frame.css" />
     <Content Include="assets\css\index.css" />
@@ -91,6 +100,7 @@
     <Content Include="assets\js\pages\preSignUp.js" />
     <Content Include="assets\libs\angularJS\1.2.32\angular-route.min.js" />
     <Content Include="assets\libs\angularJS\1.2.32\angular.min.js" />
+    <Content Include="assets\libs\angularJS\plugins\angular-datatables\angular-datatables.js" />
     <Content Include="assets\libs\angularJS\plugins\angular-route\angular-route.min.js" />
     <Content Include="assets\libs\angularJS\plugins\angular-ui-router\angular-ui-router.js" />
     <Content Include="assets\libs\angularJS\plugins\loading-bar\loading-bar.css" />
@@ -235,7 +245,9 @@
     <Content Include="assets\img\favicon.ico" />
     <Content Include="index.html" />
     <Content Include="assets\js\authComplete.js" />
-    <Content Include="Web.config" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs" />

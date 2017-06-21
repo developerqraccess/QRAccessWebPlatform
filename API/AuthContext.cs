@@ -24,7 +24,14 @@ namespace API
         public DbSet<EstadoCodigoCuenta> EstadoCogidosCuenta { get; set; }
         public DbSet<EstadoCuenta> EstadosCuenta { get; set; }
         public DbSet<TipoCuenta> TipoCuentas { get; set; }
+
+        public DbSet<Permisos> Permisos { get; set; }
+
+        public DbSet<PermisosXUsuario> PermisosXUsuario { get; set; }
         public DbSet<Usuario> Usuarios { get; set; }
+
+
+        public DbSet<Bitacora> Bitacora { get; set; }
 
     }
 }
